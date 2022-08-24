@@ -1,4 +1,4 @@
-let admin = ['your id here']
+let admin = [''] //<-- put your _id there.
 let pi = Math.PI;
 let tau = (Math.PI * 2);
 let e = Math.E;
@@ -7,7 +7,7 @@ let cos = Math.cos;
 let tan = Math.tan;
 let date = Date()
 gClient.on("a", function (msg) {
-  let isAdmin = (admin.indexOf(msg.p._id) !== -1);
+  let isAdmin = (admin.indexOf(msg.p._id) !== -1); //this is used so others can't use it.
   let args = msg.a.split("");
   let cmd = args[0].toLowerCase();
   let argcat = msg.a.substring(cmd.length).trim();
