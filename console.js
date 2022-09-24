@@ -2,10 +2,6 @@
       gClient.sendArray([{m:'a', message:string}]);
     }
 function handleMessage(msg) {
-  // Minified code is scary, so here is the full code for the `inspect` function.
-// Please note: Some function names etc. may seem odd, but the file is made realitivly small because of this. This module comes straight from NodeJS and was *compiled* for the browser.
-// This means I did not write this code myself (A compiler did!), it was simply compiled to work for the browser.
-
 window.inspect = (() => {
     function e(e, o) {
         var c = {
